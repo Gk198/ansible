@@ -1,6 +1,6 @@
--  name: Sample Playbook
+- name: Sample Playbook
   host:
-   - all
+    all
   task:
-     - debug:
+     debug:
        msg: hello world
