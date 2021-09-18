@@ -1,11 +1,10 @@
-- name: Sample Playbook
-  hosts:
-   - all
-  #hosts: all
+- name: sample playbook
+  hosts: 
+  - all
   tasks:
-  
-     - name: Print HelloWorld
-      debug:
-        msg: Hello World
+  - name: Print hello world
+  debug:
+    msg: hello world
   roles:
-      - sample
+   - sample
+     
