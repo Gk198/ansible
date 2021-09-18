@@ -1,4 +1,4 @@
-'-' name: sample playbook
+- name: sample playbook
   hosts: 
   - all
   tasks:
@@ -7,4 +7,3 @@
     msg: hello world
   roles:
    - sample
-     
