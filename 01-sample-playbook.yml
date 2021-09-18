@@ -1,4 +1,4 @@
-- name: sample playbook
+- Name: sample playbook
   hosts: 
   - all
   tasks:
