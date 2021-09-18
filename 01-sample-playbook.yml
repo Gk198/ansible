@@ -4,7 +4,7 @@
   #hosts: all
   tasks:
   
-    - name: Print HelloWorld
+     - name: Print HelloWorld
       debug:
         msg: Hello World
   roles:
