@@ -1,7 +1,7 @@
 -  name: sample playbook
    hosts: 
    - all
-  tasks:
+   tasks:
   - name: Print hello world
    debug:
     msg: hello world
