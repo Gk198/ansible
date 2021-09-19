@@ -2,9 +2,8 @@
    hosts: 
    - all
    tasks:
- - name: Print hello world
+- name: Print hello world
   debug:
     msg: hello world
     roles:
    - sample
-   
