@@ -6,4 +6,4 @@
   debug:
     msg: hello world
     roles: 
-     sample
+   - sample
