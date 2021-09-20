@@ -3,4 +3,3 @@
     - all
   tasks:
     - name: Print Hello world
-    
