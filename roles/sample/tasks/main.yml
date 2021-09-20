@@ -1,3 +1,3 @@
 -  name: hello from Role
-    debug:
+   debug:
         msg: hello from Role
