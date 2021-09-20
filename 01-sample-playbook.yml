@@ -3,7 +3,7 @@
     - all
    tasks:
     - name: Print Hello world
-   debug:
+     debug:
     msg: hello world
     roles: 
     - sample
