@@ -29,7 +29,22 @@
     remote_src: yes
     owner: roboshop
     group: roboshop
+
 - name: Install NodeJS Dependancies
   community.general.npm:
     path: /home/roboshop/catalogue
+  become_user: roboshop
+  
+- name: Setup catalogue Service File
+  copy:
+    src: systemd.service
+    dest: /etc/systemd/system/catalogue.service
+
+- name: Start catalogue Service
+  systemd:
+    name: "catalogue"
+    state: restarted
+    enabled: yes
+    daemon_reload: yes
+
 
