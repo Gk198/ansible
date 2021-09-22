@@ -29,3 +29,7 @@
     remote_src: yes
     owner: roboshop
     group: roboshop
+-  nane: Install NodeJS Dependancies
+    community.genral.npm:
+        path: /home/roboshop/catalogue/
+    become_user: roboshop
