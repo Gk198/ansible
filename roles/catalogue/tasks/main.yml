@@ -21,8 +21,11 @@
   ansible.builtin.file:
     path: /home/roboshop/catalogue
     state: absent
+
 - name: Copy Extracted Content to catalogue Path
   ansible.builtin.copy:
     src: /tmp/catalogue-main/
     dest: /home/roboshop/catalogue/
-    remote_src: yes 
+    remote_src: yes
+    owner: roboshop
+    group: roboshop
