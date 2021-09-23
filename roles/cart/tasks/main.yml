@@ -11,7 +11,7 @@
     name: roboshop
 
 
-- name: Download user App Archive
+- name: Download cart App Archive
   ansible.builtin.unarchive:
     src: "https://github.com/roboshop-devops-project/cart/archive/main.zip"
     dest: /tmp
@@ -33,7 +33,7 @@
 - name: Install NodeJS Dependancies
   community.general.npm:
     path: /home/roboshop/cart
-  become_cart: roboshop
+  become_user: roboshop
   
 - name: Setup cart Service File
   copy:
@@ -46,5 +46,4 @@
     state: restarted
     enabled: yes
     daemon_reload: yes
-
 
