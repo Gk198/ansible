@@ -43,6 +43,6 @@
 - name: Start user Service
   systemd:
     name: user
-    state: restart
+    state: restarted
     enabled: yes
     daemon_reload: yes
