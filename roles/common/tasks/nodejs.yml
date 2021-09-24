@@ -11,7 +11,7 @@
     name: roboshop
 
 
-- name: Download {{COMPONENT} App Archive
+- name: Download {{COMPONENT}} App Archive
   ansible.builtin.unarchive:
     src: "https://github.com/roboshop-devops-project/{{COMPONENT}}/archive/main.zip"
     dest: /tmp
