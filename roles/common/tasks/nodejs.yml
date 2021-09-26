@@ -35,15 +35,6 @@
     path: /home/roboshop/{{COMPONENT}}
   become_user: roboshop
   
-- name: Setup {{COMPONENT}} Service File
-  copy:
-    src: systemd.service
-    dest: /etc/systemd/{{COMPONENT}}.service
-
-- name: Start {{COMPONENT}} Service
-  systemd:
-    name: "{{COMPONENT}}"
-    state: restarted
-    enabled: yes
-    daemon_reload: yes
+- name:  SystemD
+  include_tasks: systemd.yml
 
