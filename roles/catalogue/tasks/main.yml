@@ -34,7 +34,7 @@
   community.general.npm:
     path: /home/roboshop/catalogue
   become_cart: roboshop
-  
+
 - name: Setup catalogue Service File
   copy:
     src: systemd.service
