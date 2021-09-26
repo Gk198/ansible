@@ -2,7 +2,7 @@
   yum:
     name: nginx
     state: present
-    
+
 - name: Download Frontend Archive
   ansible.builtin.unarchive:
     src: "https://github.com/roboshop-devops-project/frontend/archive/main.zip"
@@ -29,4 +29,3 @@
     name: nginx
     state: started
     enabled: yes
-    
